@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>multiplication table</title>
+</head>
+<body>
+<script>
+    let multiplication;
+    multiplication="<table id='area' border='1' width='1000' cellpadding='5' cellspacing='2' >";
+    for (i=1; i<=9; i++){
+        multiplication=multiplication+"<tr>";
+        for (j=2; j<=9; j++){
+            multiplication=multiplication+"<td>"+j+"x"+i+"="+j*i+"</td>";
+        }multiplication=multiplication+"</tr>"
+    }multiplication=multiplication+"</table>"
+    document.write(multiplication)
+</script>
+</body>
+</html>
